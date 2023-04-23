@@ -8,6 +8,8 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
+import Portfolio from "../Portfolio/Portfolio";
+import Contact from "../Contact/Contact";
 
 const Main = () => {
   return (
@@ -221,6 +223,8 @@ const Main = () => {
       />
       <Hero />
       <About />
+      <Portfolio />
+      <Contact />
     </Container>
   );
 };

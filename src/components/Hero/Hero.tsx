@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <Container id="home">
       <div className="hero-text">
-        <ScrollAnimation animateIn="fadeInUp">
-          <p>Hello 👋, I am</p>
-        </ScrollAnimation>
+        {/* <ScrollAnimation animateIn="fadeInUp"> */}
+        <p>Hello 👋, I am</p>
+        {/* </ScrollAnimation> */}
         {/* <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}> */}
         <h1>Tom Smolarczyk</h1>
         {/* </ScrollAnimation> */}
@@ -23,13 +23,13 @@ const Hero = () => {
         </p>
         {/* </ScrollAnimation> */}
 
-        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">
-              Contact
-            </NavHashLink>
-          </BrowserRouter>
-        </ScrollAnimation>
+        {/* <ScrollAnimation animateIn="fadeInUp"> */}
+        <BrowserRouter>
+          <NavHashLink smooth to="#contact" className="button">
+            Contact
+          </NavHashLink>
+        </BrowserRouter>
+        {/* </ScrollAnimation> */}
       </div>
     </Container>
   );
