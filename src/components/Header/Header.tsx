@@ -16,8 +16,8 @@ const Header = () => {
     <Container className="header-fixed">
       <BrowserRouter>
         <HashLink smooth to="#home" className="logo">
-          <span>T</span>
-          <span>Smolarczyk</span>
+          <span>t</span>
+          <span>smolarczyk</span>
         </HashLink>
 
         <input
@@ -33,7 +33,7 @@ const Header = () => {
           <NavHashLink smooth to="#home">
             Home
           </NavHashLink>
-          <NavHashLink to="#about">Aboute Me</NavHashLink>
+          <NavHashLink to="#about">About Me</NavHashLink>
           <NavHashLink to="#portfolio">Portfolio</NavHashLink>
           <NavHashLink to="#contact">Contact</NavHashLink>
           <a href={cv} download>
