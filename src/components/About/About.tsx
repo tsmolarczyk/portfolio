@@ -18,7 +18,6 @@ const About = () => {
         {/* </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}> */}
         <p>
-          {" "}
           My name is Tom Smolarczyk, I hold a Master's degree in Automation and
           Robotics, which has equipped me with a strong foundation in
           engineering principles.

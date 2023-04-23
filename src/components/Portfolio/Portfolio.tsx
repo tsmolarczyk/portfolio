@@ -3,7 +3,7 @@ import githubIcon from "../../assets/github-icon.svg";
 
 const Portfolio = () => {
   return (
-    <Container>
+    <Container id="portfolio">
       <h2>My projects</h2>
       <div className="projects">
         <div className="project">
@@ -29,20 +29,17 @@ const Portfolio = () => {
             </div>
           </header>
           <div className="body">
-            <h3>FCallendar</h3>
+            <h3>Project title</h3>
             <p>
-              Uma aplicação Web realizada durante o Hackathon do programa de
-              formação da <a href="https://www.fcamara.com.br/"> FCamara</a>.
-              Esta aplicação serve para ajudar na volta do trabalho remoto para
-              o presencial.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi est cum corporis dolorum? Explicabo delectus
+              necessitatibus obcaecati a inventore architecto.
             </p>
           </div>
           <footer>
             <ul className="tech-list">
-              <li>Node</li>
-              <li>Express</li>
-              <li>MySql</li>
-              <li>Ejs</li>
+              <li>React</li>
+              <li>Taildwind</li>
             </ul>
           </footer>
         </div>

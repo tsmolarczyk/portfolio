@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
         <div>
           <img src={phoneIcon} alt="Email" />
-          <a href="tel:+48792433475">(+48)792433475</a>
+          <a href="tel:+48792433475">(+48) 792 433 475</a>
         </div>
       </div>
       <Form />

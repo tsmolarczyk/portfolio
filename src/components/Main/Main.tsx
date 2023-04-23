@@ -10,6 +10,7 @@ import Hero from "../Hero/Hero";
 import About from "../About/About";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 const Main = () => {
   return (
@@ -175,11 +176,6 @@ const Main = () => {
                   width: 20,
                   height: 20
                 }
-                // {
-                //   src: vscodeIcon,
-                //   width: 20,
-                //   height: 20
-                // },
               ],
               polygon: {
                 sides: 5

@@ -12,14 +12,14 @@ const Form = () => {
           name="email"
           required
         />
+        <textarea
+          required
+          name="message"
+          id="message"
+          placeholder="Write a message"
+        />
+        <button type="submit">Send</button>
       </form>
-      <textarea
-        required
-        name="message"
-        id="message"
-        placeholder="Write a message"
-      />
-      <button type="submit">Send</button>
     </Container>
   );
 };

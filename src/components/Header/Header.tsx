@@ -33,9 +33,15 @@ const Header = () => {
           <NavHashLink smooth to="#home">
             Home
           </NavHashLink>
-          <NavHashLink to="#about">About Me</NavHashLink>
-          <NavHashLink to="#portfolio">Portfolio</NavHashLink>
-          <NavHashLink to="#contact">Contact</NavHashLink>
+          <NavHashLink smooth to="#about">
+            About Me
+          </NavHashLink>
+          <NavHashLink smooth to="#portfolio">
+            Portfolio
+          </NavHashLink>
+          <NavHashLink smooth to="#contact">
+            Contact
+          </NavHashLink>
           <a href={cv} download>
             CV
           </a>
