@@ -18,8 +18,8 @@ const Hero = () => {
         {/* </ScrollAnimation> */}
         {/* <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}> */}
         <p className="small-resume">
-          I am working with ract to build to create attractive and intuitive web
-          pages.
+          I am working with react to build to create attractive and intuitive
+          web pages.
         </p>
         {/* </ScrollAnimation> */}
 

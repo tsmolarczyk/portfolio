@@ -3,7 +3,6 @@ import { Container } from "./styles";
 import reactIcon from "../../assets/react-icon.svg";
 import linkedinIcon from "../../assets/linkedin.png";
 import githubIcon from "../../assets/github.png";
-import instagramIcon from "../../assets/instagram.png";
 
 const Footer = () => {
   return (
@@ -19,7 +18,7 @@ const Footer = () => {
       </div>
       <div className="social-media">
         <a
-          href="https://www.linkedin.com/in/jtsoares/"
+          href="https://www.linkedin.com/in/tomasz-smolarczyk-a9774b179/"
           target="_blank"
           rel="noreferrer"
         >
@@ -27,7 +26,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://github.com/joaotuliojt"
+          href="https://github.com/tsmolarczyk"
           target="_blank"
           rel="noreferrer"
         >
