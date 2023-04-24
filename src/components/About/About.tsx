@@ -12,11 +12,11 @@ import image from "../../assets/tsmolarczyk-photo.jpg";
 const About = () => {
   return (
     <Container id="about">
-      <div className="about-text">
+      <div>
         <ScrollAnimation animateIn="fadeInLeft">
           <h2>About Me</h2>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
+        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
           <p>
             My name is Tom Smolarczyk, I hold a Master's degree in Automation
             and Robotics, which has equipped me with a strong foundation in

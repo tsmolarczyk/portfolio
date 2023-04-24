@@ -12,6 +12,10 @@ const Header = () => {
     html.classList.toggle("light");
   };
 
+  const closeMenu = () => {
+    setActive(false);
+  };
+
   return (
     <Container className="header-fixed">
       <BrowserRouter>
@@ -30,23 +34,26 @@ const Header = () => {
         <label htmlFor="switch">Toggle</label>
 
         <nav className={isActive ? "active" : ""}>
-          <NavHashLink smooth to="#home">
+          <NavHashLink smooth to="#home" onClick={closeMenu}>
             Home
           </NavHashLink>
-          <NavHashLink smooth to="#about">
+          <NavHashLink smooth to="#about" onClick={closeMenu}>
             About Me
           </NavHashLink>
-          <NavHashLink smooth to="#portfolio">
+          <NavHashLink smooth to="#portfolio" onClick={closeMenu}>
             Portfolio
           </NavHashLink>
-          <NavHashLink smooth to="#contact">
+          <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
           </NavHashLink>
-          <a href={cv} download>
+          <a href={cv} className="button" download onClick={closeMenu}>
             CV
           </a>
         </nav>
         <div
+          aria-expanded={isActive ? "true" : "false"}
+          aria-haspopup="true"
+          aria-label={isActive ? "close menu" : "open menu"}
           className={isActive ? "menu active" : "menu"}
           onClick={() => {
             setActive(!isActive);
