@@ -1,14 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
-
-
 export const GlobalStyle = createGlobalStyle`
 
   :root{
-    --pink: #E31F71;
-    --black: #212121;
-    --green: #23ce6b;
-    --blue: #016fb9;
+    --pink: #41644A;
+    --black: #263A29;
+    --green: #E86A33;
+    --blue: #A6D0DD;
     scroll-padding-top: 10rem;
 
     &.light{
@@ -31,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
           color: black;
         }
         .menu,.menu:before, .menu:after{
-          background-color: var(--black); 
+          background-color: var(--black);
         }
         .menu.active{
           background-color: rgba(555,555,555,0);
@@ -120,6 +118,6 @@ export const GlobalStyle = createGlobalStyle`
       color: var(--green);
     }
   }
-  
 
-`
+
+`;

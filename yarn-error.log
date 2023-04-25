@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/tom/.nvm/versions/node/v16.17.0/bin/node /usr/local/bin/yarn add react-scroll-reveal
+  /Users/tom/.nvm/versions/node/v16.17.0/bin/node /usr/local/bin/yarn add @types/formspree/react
 
 PATH: 
   /Users/tom/.nvm/versions/node/v16.17.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tom/.fig/bin:/Users/tom/.local/bin
@@ -14,8 +14,8 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/react-scroll-reveal: Not found
-      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+  Error: https://registry.yarnpkg.com/@types%2fformspree/react: Request "https://registry.yarnpkg.com/@types%2fformspree/react" returned a 405
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66154:18)
       at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
       at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
@@ -38,13 +38,17 @@ npm manifest:
       "preview": "vite preview"
     },
     "dependencies": {
+      "@formspree/react": "^2.4.1",
       "@types/react-animate-on-scroll": "^2.1.5",
+      "@types/react-google-recaptcha": "^2.1.5",
       "@types/react-router-hash-link": "^2.4.6",
       "@types/styled-components": "^5.1.26",
       "animate.css": "^4.1.1",
       "react": "^18.2.0",
       "react-animate-on-scroll": "^2.1.5",
+      "react-awesome-reveal": "^4.2.3",
       "react-dom": "^18.2.0",
+      "react-google-recaptcha": "^2.1.0",
       "react-router-dom": "^6.10.0",
       "react-router-hash-link": "^2.4.3",
       "react-tsparticles": "^2.9.3",
@@ -414,6 +418,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.17.17.tgz#2b577b976e6844106715bbe0cdc57cd1528063f9"
     integrity sha512-FNZw7H3aqhF9OyRQbDDnzUApDXfC1N6fgBhkqEO2jvYCJ+DxMTfZVqg3AX0R1khg1wHTBRD5SdcibSJ+XF6bFg==
   
+  "@formspree/react@^2.4.1":
+    version "2.4.1"
+    resolved "https://registry.yarnpkg.com/@formspree/react/-/react-2.4.1.tgz#c6ee262f63443006fc43902fd08ec1a43bfb51c3"
+    integrity sha512-ZP3oZ7HIMf6KK2sbz4H5XLNXjXBJotI9nveSiTX68Uc1eGzWjBKQqp2qAFlOSjmvgoYMkjJ7NtVD14s49ZrBow==
+    dependencies:
+      "@stripe/react-stripe-js" "^1.7.1"
+      "@stripe/stripe-js" "^1.35.0"
+  
   "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
     version "0.3.3"
     resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz#7e02e6eb5df901aaedb08514203b096614024098"
@@ -456,6 +468,18 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.5.0.tgz#57618e57942a5f0131374a9fdb0167e25a117fdc"
     integrity sha512-bkUDCp8o1MvFO+qxkODcbhSqRa6P2GXgrGZVpt0dCXNW2HCSCqYI0ZoAqEOSAjRWmmlKcYgFvN4B4S+zo/f8kg==
   
+  "@stripe/react-stripe-js@^1.7.1":
+    version "1.16.5"
+    resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-1.16.5.tgz#51cf862b50ca91ae6193c77a5bec889e81047f10"
+    integrity sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==
+    dependencies:
+      prop-types "^15.7.2"
+  
+  "@stripe/stripe-js@^1.35.0":
+    version "1.52.1"
+    resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.52.1.tgz#d821bcd627a34227c20fe87d7c8f8bd4386eaf2e"
+    integrity sha512-fza40OPSpGQlFxc5TZWiYC/6Lk89Sep1fLuv9ss33YS6lCAF8UZbfA1E6W+lwO4c7WRKZIZumHIEbPJfP/O9uw==
+  
   "@types/history@^4.7.11":
     version "4.7.11"
     resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.11.tgz#56588b17ae8f50c53983a524fc3cc47437969d64"
@@ -485,6 +509,13 @@ Lockfile:
     version "18.0.11"
     resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.11.tgz#321351c1459bc9ca3d216aefc8a167beec334e33"
     integrity sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==
+    dependencies:
+      "@types/react" "*"
+  
+  "@types/react-google-recaptcha@^2.1.5":
+    version "2.1.5"
+    resolved "https://registry.yarnpkg.com/@types/react-google-recaptcha/-/react-google-recaptcha-2.1.5.tgz#af157dc2e4bde3355f9b815a64f90e85cfa9df8b"
+    integrity sha512-iWTjmVttlNgp0teyh7eBXqNOQzVq2RWNiFROWjraOptRnb1OcHJehQnji0sjqIRAk9K0z8stjyhU+OLpPb0N6w==
     dependencies:
       "@types/react" "*"
   
@@ -837,7 +868,7 @@ Lockfile:
       picocolors "^1.0.0"
       source-map-js "^1.0.2"
   
-  prop-types@^15.5.9, prop-types@^15.7.2:
+  prop-types@^15.5.0, prop-types@^15.5.9, prop-types@^15.7.2:
     version "15.8.1"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
     integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -854,6 +885,22 @@ Lockfile:
       lodash.throttle "^4.1.1"
       prop-types "^15.5.9"
   
+  react-async-script@^1.1.1:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/react-async-script/-/react-async-script-1.2.0.tgz#ab9412a26f0b83f5e2e00de1d2befc9400834b21"
+    integrity sha512-bCpkbm9JiAuMGhkqoAiC0lLkb40DJ0HOEJIku+9JDjxX3Rcs+ztEOG13wbrOskt3n2DTrjshhaQ/iay+SnGg5Q==
+    dependencies:
+      hoist-non-react-statics "^3.3.0"
+      prop-types "^15.5.0"
+  
+  react-awesome-reveal@^4.2.3:
+    version "4.2.3"
+    resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-4.2.3.tgz#129e85eee3b1ce522e09f8b06033cb1d233b95bb"
+    integrity sha512-wln5oVUw8qBTF0flLyHxbcDsM+fpYvcQZ0aih9YL1aK1CiVewEp7D/ltCsQ8lKQEsZ50udvmje4HPKxyiUDp8Q==
+    dependencies:
+      react-intersection-observer "^9.4.1"
+      react-is "^18.2.0"
+  
   react-dom@^18.2.0:
     version "18.2.0"
     resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
@@ -862,10 +909,28 @@ Lockfile:
       loose-envify "^1.1.0"
       scheduler "^0.23.0"
   
+  react-google-recaptcha@^2.1.0:
+    version "2.1.0"
+    resolved "https://registry.yarnpkg.com/react-google-recaptcha/-/react-google-recaptcha-2.1.0.tgz#9f6f4954ce49c1dedabc2c532347321d892d0a16"
+    integrity sha512-K9jr7e0CWFigi8KxC3WPvNqZZ47df2RrMAta6KmRoE4RUi7Ys6NmNjytpXpg4HI/svmQJLKR+PncEPaNJ98DqQ==
+    dependencies:
+      prop-types "^15.5.0"
+      react-async-script "^1.1.1"
+  
+  react-intersection-observer@^9.4.1:
+    version "9.4.3"
+    resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.4.3.tgz#ec84ce0c25cad548075130ea045ac5c7adf908f3"
+    integrity sha512-WNRqMQvKpupr6MzecAQI0Pj0+JQong307knLP4g/nBex7kYfIaZsPpXaIhKHR+oV8z+goUbH9e10j6lGRnTzlQ==
+  
   react-is@^16.13.1, react-is@^16.7.0:
     version "16.13.1"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
     integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+  
+  react-is@^18.2.0:
+    version "18.2.0"
+    resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
+    integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
   
   react-refresh@^0.14.0:
     version "0.14.0"

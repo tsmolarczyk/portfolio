@@ -9,21 +9,29 @@ const Contact = () => {
       <header>
         <h2>Contact with me</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-          provident quidem laboriosam eum culpa sint hic a, minima quis dolore.
+          If you want to collaborate or ask about something don't hesitate to
+          send me a message.
         </p>
       </header>
       <div className="contacts">
-        <div>
+        {/* <div>
           <img src={emailIcon} alt="email" />
           <a href="mailto:tomek.smolarczyk@gmail.com">
             tomek.smolarczyk@gmail.com
           </a>
-        </div>
-        <div>
-          <img src={phoneIcon} alt="Email" />
-          <a href="tel:+48792433475">(+48) 792 433 475</a>
-        </div>
+        </div> */}
+        <a href="mailto:tomek.smolarczyk@gmail.com">
+          <div className="contact-btn">
+            <img src={emailIcon} alt="email" />
+            <span>tomek.smolarczyk@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+48792433475">
+          <div className="contact-btn">
+            <img src={phoneIcon} alt="Email" />
+            <span>(+48) 792 433 475</span>
+          </div>
+        </a>
       </div>
       <Form />
     </Container>

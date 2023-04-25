@@ -221,7 +221,6 @@ const Main = () => {
       <About />
       <Portfolio />
       <Contact />
-      <Footer />
     </Container>
   );
 };
