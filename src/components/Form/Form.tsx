@@ -5,7 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
   const [isHuman, setIsHuman] = useState(false);
-  const [state, handleSubmit] = useForm("");
+  const [state, handleSubmit] = useForm("myForm");
   const [message, setMessage] = useState("");
 
   return (
