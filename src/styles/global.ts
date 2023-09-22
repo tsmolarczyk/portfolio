@@ -3,15 +3,18 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
   :root{
-    --pink: #41644A;
+    --light-green: #41644A;
     --black: #263A29;
-    --green: #E86A33;
+    --orange: #E86A33;
     --blue: #A6D0DD;
     scroll-padding-top: 10rem;
+
+
 
     &.light{
 
       body{
+
         transition: 0.5s;
         background-color: #f5f5f5;
         color: var(--black);
@@ -78,6 +81,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     font-size: 1.6rem;
+    max-width: 1440px;
+    margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     background-color: var(--black);
     color: #FFFF;
@@ -95,7 +100,7 @@ export const GlobalStyle = createGlobalStyle`
   button, .button{
     border: none;
     cursor: pointer;
-    background-color: var(--green);
+    background-color: var(--orange);
     color: #FFFF;
     border-radius: 2rem;
     font-weight: 500;
@@ -115,7 +120,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 3rem;
     color: #FFFF;
     &::first-letter{
-      color: var(--green);
+      color: var(--orange);
     }
   }
 

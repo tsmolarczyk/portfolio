@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 15rem;
+  margin-top: 10rem;
 
   h2 {
     text-align: center;
@@ -16,6 +16,7 @@ export const Container = styled.section`
     gap: 2rem;
     padding: 1rem;
     overflow: hidden;
+    cursor: pointer;
 
     .project {
       padding: 2rem 1.8rem;
@@ -28,7 +29,7 @@ export const Container = styled.section`
       color: #fff;
       &:hover {
         transform: translateY(-5px);
-        background-color: var(--pink);
+        background-color: var(--light-green);
       }
 
       header {
@@ -37,10 +38,20 @@ export const Container = styled.section`
         justify-content: space-between;
         color: var(--blue);
         margin-bottom: 3.6rem;
+
         .project-links {
           display: flex;
           align-items: center;
           gap: 1rem;
+
+          button {
+            padding: 1rem;
+            border-radius: 100%;
+          }
+
+          .project-links a img:hover {
+            box-shadow: 0px 0px 10px red;
+          }
         }
         a > img {
           width: 2.6rem;
@@ -56,11 +67,18 @@ export const Container = styled.section`
         margin-bottom: 2rem;
         a {
           color: #ffff;
-          border-bottom: 1px solid var(--green);
+          border-bottom: 1px solid var(--orange);
           transition: color 0.25s;
           &:hover {
-            color: var(--green);
+            color: var(--orange);
           }
+        }
+      }
+
+      .project-photo {
+        img {
+          width: 100%;
+          object-fit: cover;
         }
       }
 

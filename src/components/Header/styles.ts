@@ -1,20 +1,27 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.8rem 10rem;
 
   background-color: #21212150;
-
   backdrop-filter: blur(6px);
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 1000;
+  z-index: 99;
+
+  .inner-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   nav {
     display: flex;
@@ -97,7 +104,7 @@ export const Container = styled.header`
     text-indent: -9999px;
     width: 55px;
     height: 30px;
-    background: var(--green);
+    background: var(--orange);
     display: block;
     justify-content: center;
     align-items: center;
@@ -130,7 +137,7 @@ export const Container = styled.header`
   }
 
   input:checked + label {
-    background: var(--pink);
+    background: var(--light-green);
   }
 
   input:checked + label:after {
@@ -142,7 +149,7 @@ export const Container = styled.header`
     transform: translateX(-100%);
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1000px) {
     padding: 1.8rem 3rem;
 
     .menu {
@@ -165,10 +172,10 @@ export const Container = styled.header`
       top: 0;
       left: 0;
       transition: opacity 0.25s;
-      background-color: var(--green);
+      background-color: var(--orange);
 
       a.button {
-        background-color: var(--pink);
+        background-color: var(--light-green);
       }
 
       &.active {

@@ -16,35 +16,37 @@ import image from "../../assets/tsmolarczyk-photo.jpg";
 const About = () => {
   return (
     <Container id="about">
-      <div>
-        <ScrollAnimation animateIn="fadeInLeft" animateOnce>
+      <div className="about-description">
+        <div>
           <h2>About Me</h2>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000} animateOnce>
+        </div>
+        <div>
           <p>
             My name is Tom Smolarczyk, I have master's degree in Automation and
             Robotics, which has equipped me with a strong foundation in
             engineering principles and problem-solving.
           </p>
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateOnce
-          animateIn="fadeInLeft"
-          delay={0.4 * 1000}
-          style={{ marginTop: "2rem", marginBottom: "2rem" }}
+        </div>
+        <div
+        // animateOnce
+        // animateIn="fadeInLeft"
+        // delay={0.4 * 1000}
+        // style={{ marginTop: "2rem", marginBottom: "2rem" }}
         >
           <p>
             Since 2020, continuously expanding my skills in web development. I
             am working on programming user interfaces and creating intuitive and
             functional web applications.
           </p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000} animateOnce>
+        </div>
+        <div
+        // animateIn="fadeInLeft" delay={0.6 * 1000} animateOnce
+        >
           <p>
             I am currently working in a company where we develop applications
             for bookmaking.
           </p>
-        </ScrollAnimation>
+        </div>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000} animateOnce>
           <h3>My skills:</h3>
         </ScrollAnimation>
@@ -127,8 +129,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div style={{ marginLeft: "5rem" }}>
-        <img width="auto" height="600px" src={image} alt="" />
+      <div className="about-photo">
+        <img src={image} alt="tsmolarczyk-photo" />
       </div>
     </Container>
   );

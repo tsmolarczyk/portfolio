@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Container } from "./styles";
+import { HeroContainer } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
 import { NavHashLink } from "react-router-hash-link";
 import devImage from "../../assets/web-design.png";
@@ -8,7 +8,7 @@ import { Zoom } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <Container id="home">
+    <HeroContainer id="home">
       <div className="hero-text">
         <p>Hello 👋, I am</p>
 
@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="hero-image">
         <img src={devImage} alt="web-dev-image" />
       </div>
-    </Container>
+    </HeroContainer>
   );
 };
 

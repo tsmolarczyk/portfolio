@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 12rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin-top: 15rem;
+  display: flex;
+
+  flex-direction: row;
   gap: 2rem;
-  height: 600px;
 
   .hard-skills {
     margin-top: 1.6rem;
@@ -32,7 +32,7 @@ export const Container = styled.section`
 
   h3 {
     margin-top: 2rem;
-    color: var(--green);
+    color: var(--orange);
   }
 
   p {
@@ -40,6 +40,19 @@ export const Container = styled.section`
     letter-spacing: 0.1rem;
     font-weight: 500;
     margin-top: 1rem;
+  }
+
+  .about-description {
+    flex: 1;
+  }
+
+  .about-photo {
+    flex: 1;
+    img {
+      width: 100%;
+      object-fit: contain;
+      overflow: hidden;
+    }
   }
 
   .about-image {
@@ -66,8 +79,10 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 960px) {
-    display: block;
+  @media (max-width: 1000px) {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
     text-align: center;
 
     .about-image {
