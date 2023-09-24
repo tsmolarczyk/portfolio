@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 10rem;
+  margin-top: 5rem;
 
   h2 {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
   }
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, minmax(0, max-content));
+    justify-content: center;
     gap: 2rem;
     padding: 1rem;
     overflow: hidden;
