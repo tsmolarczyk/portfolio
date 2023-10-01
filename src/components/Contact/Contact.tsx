@@ -9,8 +9,9 @@ const Contact = () => {
       <header>
         <h2>Contact with me</h2>
         <p>
-          If you want to collaborate or ask about something don't hesitate to
-          contact with me.
+          If you'd like to collaborate or have any questions, feel free to
+          contact me. I'm open to all coding challenges and recruitment
+          exercises.
         </p>
       </header>
       <div className="contacts">
