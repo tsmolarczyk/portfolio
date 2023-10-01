@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink, NavHashLink } from "react-router-hash-link";
-import cv from "../../assets/cv.pdf";
+// import cv from "../../assets/cv.pdf";
+import cv from "../../assets/Smolarczyk Tomasz Resume.pdf";
+
 import { HeaderContainer } from "./styles";
 
 const Header = () => {
