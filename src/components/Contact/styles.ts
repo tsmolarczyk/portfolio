@@ -21,6 +21,7 @@ export const Container = styled.section`
     gap: 2rem;
     place-items: center;
     margin-top: 8rem;
+    margin-bottom: 3rem;
     a {
       height:7rem;
       display: flex;

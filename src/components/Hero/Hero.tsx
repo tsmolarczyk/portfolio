@@ -13,11 +13,8 @@ const Hero = () => {
         <p>Hello 👋, I am</p>
 
         <h1>Tom Smolarczyk</h1>
-        <h3>React Frontend Developer</h3>
-        <p className="small-resume">
-          I am working with react to build to create attractive and intuitive
-          web pages.
-        </p>
+        <h3>Frontend Developer</h3>
+        <p className="small-resume">Making the Web Better, One UI at a Time.</p>
 
         <BrowserRouter>
           <NavHashLink smooth to="#contact" className="button">

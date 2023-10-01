@@ -10,7 +10,7 @@ const Contact = () => {
         <h2>Contact with me</h2>
         <p>
           If you want to collaborate or ask about something don't hesitate to
-          send me a message.
+          contact with me.
         </p>
       </header>
       <div className="contacts">
@@ -33,7 +33,7 @@ const Contact = () => {
           </div>
         </a>
       </div>
-      <Form />
+      {/* <Form /> */}
     </Container>
   );
 };

@@ -11,7 +11,7 @@ export const Container = styled.section`
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, max-content));
+    grid-template-columns: repeat(2, minmax(200px, max-content));
     justify-content: center;
     gap: 2rem;
     padding: 1rem;
@@ -19,6 +19,8 @@ export const Container = styled.section`
     cursor: pointer;
 
     .project {
+      min-width: 200px;
+
       padding: 2rem 1.8rem;
       background-color: #2b2b2b;
       border-radius: 1.2rem;
@@ -86,6 +88,7 @@ export const Container = styled.section`
         margin-top: auto;
         .tech-list {
           display: flex;
+          margin-top: 1rem;
           align-items: center;
           gap: 2rem;
           font-size: 1.4rem;

@@ -22,29 +22,22 @@ const About = () => {
         </div>
         <div>
           <p>
-            My name is Tom Smolarczyk, I have master's degree in Automation and
-            Robotics, which has equipped me with a strong foundation in
-            engineering principles and problem-solving.
+            My name is Tomek Smolarczyk. Coding has been my passion since I
+            remember. I took a detour into robot programming and earned a
+            master's degree in Automation and Robotics. However, I finally
+            decide to pursue a career in software development.
           </p>
         </div>
-        <div
-        // animateOnce
-        // animateIn="fadeInLeft"
-        // delay={0.4 * 1000}
-        // style={{ marginTop: "2rem", marginBottom: "2rem" }}
-        >
+        <div>
           <p>
-            Since 2020, continuously expanding my skills in web development. I
-            am working on programming user interfaces and creating intuitive and
-            functional web applications.
+            Currently part of an international team, developing cutting-edge
+            applications for the bookmaking industry.
           </p>
         </div>
-        <div
-        // animateIn="fadeInLeft" delay={0.6 * 1000} animateOnce
-        >
+        <div>
           <p>
-            I am currently working in a company where we develop applications
-            for bookmaking.
+            I mainly work with React, but I am eager to explore new technologies
+            and approaches.
           </p>
         </div>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000} animateOnce>

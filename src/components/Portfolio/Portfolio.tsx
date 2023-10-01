@@ -1,18 +1,19 @@
 import { Container } from "./styles";
 import githubIcon from "../../assets/github-icon.svg";
 import metaProject from "../../assets/meta-project.png";
+import netfixProject from "../../assets/netfix-project.png";
 
 const Portfolio = () => {
   return (
     <Container id="portfolio">
       <h2>My projects</h2>
-      <div
-        className="projects"
-        onClick={() =>
-          window.open("https://explorer-motion.vercel.app", "_blank")
-        }
-      >
-        <div className="project">
+      <div className="projects">
+        <div
+          className="project"
+          onClick={() =>
+            window.open("https://explorer-motion.vercel.app", "_blank")
+          }
+        >
           <header>
             <svg
               width="50"
@@ -30,7 +31,11 @@ const Portfolio = () => {
             </svg>
             <div className="project-links">
               <button>
-                <a href="https://google.com" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/tsmolarczyk/explorer"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={githubIcon} alt="GitHub" />
                 </a>
               </button>
@@ -53,7 +58,16 @@ const Portfolio = () => {
             </ul>
           </footer>
         </div>
-        <div className="project">
+
+        <div
+          className="project"
+          onClick={() =>
+            window.open(
+              "https://6519801f90379f5bd3303712--snazzy-syrniki-d05b4a.netlify.app/",
+              "_blank"
+            )
+          }
+        >
           <header>
             <svg
               width="50"
@@ -70,23 +84,32 @@ const Portfolio = () => {
               <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
             </svg>
             <div className="project-links">
-              <a href="https://google.com" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="GitHub" />
-              </a>
+              <button>
+                <a
+                  href="https://github.com/tsmolarczyk/netfix/tree/master"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubIcon} alt="GitHub" />
+                </a>
+              </button>
             </div>
           </header>
           <div className="body">
-            <h3>Project title</h3>
+            <h3>Netflix Clone - Movie Base</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi est cum corporis dolorum? Explicabo delectus
-              necessitatibus obcaecati a inventore architecto.
+              Redux for state management and allows browsing movies, with
+              detailed movie information.
             </p>
+            <div className="project-photo">
+              <img src={netfixProject} alt="netflix clone movies" />
+            </div>
           </div>
           <footer>
             <ul className="tech-list">
               <li>React</li>
-              <li>Taildwind</li>
+              <li>Redux</li>
+              <li>MUI</li>
             </ul>
           </footer>
         </div>
