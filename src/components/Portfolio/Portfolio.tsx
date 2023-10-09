@@ -63,7 +63,7 @@ const Portfolio = () => {
           className="project"
           onClick={() =>
             window.open(
-              "https://6519801f90379f5bd3303712--snazzy-syrniki-d05b4a.netlify.app/",
+              "https://snazzy-syrniki-d05b4a.netlify.app/",
               "_blank"
             )
           }
